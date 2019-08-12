@@ -12,8 +12,14 @@ services:
       context: './docker-configs/php-fpm'
       dockerfile: 'php.Dockerfile'
     volumes:
-      - ./src/:/var/phpapp/
+      - ./src:/var/www/src
       - ./docker-configs/php-fpm/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+  composer:
+    build:
+      context: './docker-configs/composer'
+      dockerfile: 'composer.Dockerfile'
+    volumes:
+      - ./src:/var/www/src
   db:
     image: mysql:5.7
     environment:
