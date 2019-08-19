@@ -22,5 +22,5 @@ $ docker-compose run composer create-project laravel/laravel .
 * `.env`
 
 ```env
-SRCDIR=~/work/laravel-first-sample
+SRCDIR=~/work/laravel-app-sample
 ```
