@@ -16,8 +16,9 @@ $ docker-compose run composer create-project laravel/laravel .
 
 ### Change output destination...
 
-リポジトリ直下の`.env`ファイルで出力先を変更してください。
-下記を変更することで指定した出力先にlaravelプロジェクトを作成することができます。
+リポジトリ直下の`.env`ファイルで出力先を変更してください。  
+下記を変更することで指定した出力先にlaravelプロジェクトを作成することができます。  
+※出力先ディレクトリが存在しないとエラーになります。
 
 * `.env`
 
