@@ -1,15 +1,26 @@
 ## What's this...
 
-とりあえずlaravel触らないとな〜って感じでローカルのlaravelプロジェクト実行環境を作っていきます。
+Dockerを使用したLaravelプロジェクトの開発（実行）環境です。
 
 このリポジトリから流用です。
 
 * [Lycheejam/php\-crud\-sample: PHP実験場](https://github.com/Lycheejam/php-crud-sample)
 
-ほんとにlaravel触ったことないのでググりながらの手探り状態です。  
-これネットの記事漁ってて気づいたんですけどnode.js実行用のコンテナも必要なんですね。
+## How to create laravel project...
 
-まあ、いろいろ足りてないのはそのうち足していきます。
+コンテナの`workdir`直下にlaravelプロジェクトを作成します。
 
-`src/laravel`の構成になってるのは出力先ディレクトリを`src`にするやり方が分からなかったから。  
-Hello Worldにすらたどり着いてませんが、とりあえずlaravelのいつもの画面は表示できました。
+```sh
+$ docker-compose run composer create-project laravel/laravel .
+```
+
+### Change output destination...
+
+リポジトリ直下の`.env`ファイルで出力先を変更してください。
+下記を変更することで指定した出力先にlaravelプロジェクトを作成することができます。
+
+* `.env`
+
+```env
+SRCDIR=~/work/laravel-first-sample
+```
