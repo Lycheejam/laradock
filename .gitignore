@@ -1,3 +1,4 @@
 .vscode/
 docker-configs/mysql/data/*
 .markdownlint.json
+.venv
