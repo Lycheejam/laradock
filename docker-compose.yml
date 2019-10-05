@@ -1,3 +1,4 @@
+---
 version: "3.7"
 services:
 
@@ -8,7 +9,7 @@ services:
     volumes:
       - ./docker-configs/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
   php:
-    build: 
+    build:
       context: './docker-configs/php-fpm'
       dockerfile: 'php.Dockerfile'
     volumes:
