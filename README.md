@@ -25,3 +25,20 @@ $ docker-compose run composer create-project laravel/laravel .
 ```env
 SRCDIR=~/work/laravel-app-sample
 ```
+
+## How to Develop
+
+yamllintを導入しているのでその環境を使用してください。  
+下記の手順で`git commit`時にlintが走ります。
+
+```sh
+$ git clone git@github.com:Lycheejam/laradock.git
+$ cd laradock
+$ python -m venv .venv
+$ source .venv/bin/activate
+```
+
+```sh
+pip install -r requirements.txt
+pre-commit install
+```
