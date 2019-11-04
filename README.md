@@ -6,6 +6,9 @@ Dockerを使用したLaravelプロジェクトの開発（実行）環境です�
 
 * [Lycheejam/php\-crud\-sample: PHP実験場](https://github.com/Lycheejam/php-crud-sample)
 
+laradockって名前にしてたんですけどすでに存在してたんですね。
+名前変更しました。
+
 ## How to create laravel project...
 
 コンテナの`workdir`直下にlaravelプロジェクトを作成します。

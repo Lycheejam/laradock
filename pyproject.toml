@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "laradock"
+name = "laradev"
 version = "0.1.0"
 description = ""
 authors = ["Lycheejam <lycheejamwow@gmail.com>"]
